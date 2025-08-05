@@ -1,14 +1,14 @@
 <template>
   <div>
     <header class="header"
-      :style="{ backgroundColor: colorheader === '1' ? '#F1B300' : colorheader === '2' ? '#78A036' : colorheader === '3' ? '#BD5288' : colorheader === '4' ? '#F6B363' : '#B6D989' }">
+      :style="{ backgroundColor: colorheader === '1' ? '#DEB71C' : colorheader === '2' ? '#7F6AEC' : colorheader === '3' ? '#FB4474' : colorheader === '4' ? '#FC8811' : '#B6D989' }">
       <h2 class="titulo-header">TALONARIO</h2>
     </header>
     <main>
       <div class="modal-intro" v-if="modal_intro">
         <div class="intro">
           <div class="color-titulo"
-            :style="{ backgroundColor: colorheader === '1' ? '#F1B300' : colorheader === '2' ? '#78A036' : colorheader === '3' ? '#BD5288' : colorheader === '4' ? '#F6B363' : '#B6D989' }">
+            :style="{ backgroundColor: colorheader === '1' ? '#DEB71C' : colorheader === '2' ? '#7F6AEC' : colorheader === '3' ? '#FB4474' : colorheader === '4' ? '#FC8811' : '#B6D989' }">
             <span class="closeicon2" @click="aviso()"><i class="fa fa-times"></i></span>
             <h2 class="titulo-info-talonario">CONFIGURA TU TALONARIO</h2>
           </div>
@@ -29,7 +29,7 @@
             </select>
             <input type="date" placeholder="Fecha de sorteo" v-model="fecha">
             <button class="buttonr" @click="validar()"
-              :style="{ backgroundColor: colorbotones === '1' ? '#F1B300' : colorbotones === '2' ? '#78A036' : colorbotones === '3' ? '#BD5288' : colorbotones === '4' ? '#F6B363' : '#B6D989' }">Guardar</button>
+              :style="{ backgroundColor: colorbotones === '1' ? '#DEB71C' : colorbotones === '2' ? '#7F6AEC' : colorbotones === '3' ? '#FB4474' : colorbotones === '4' ? '#FC8811' : '#B6D989' }">Guardar</button>
           </div>
 
         </div>
@@ -45,7 +45,7 @@
             <h6></h6>
             <div class="boton">
               <button class="btn-editar" @click="editar(item, i)"
-                :style="{ backgroundColor: colorbotones === '1' ? '#F1B300' : colorbotones === '2' ? '#78A036' : colorbotones === '3' ? '#BD5288' : colorbotones === '4' ? '#F6B363' : '#B6D989' }">
+                :style="{ backgroundColor: colorbotones === '1' ? '#DEB71C' : colorbotones === '2' ? '#7F6AEC' : colorbotones === '3' ? '#FB4474' : colorbotones === '4' ? '#FC8811' : '#B6D989' }">
                 Editar<i class="fa fa-edit"></i></button>
             </div>
           </div>
@@ -66,10 +66,10 @@
           <h3 class="titulo-info">Acciones</h3>
           <div class="cuerpo-acciones">
             <button class="btn-acciones" @click="listardatos()"
-              :style="{ backgroundColor: colorbotones === '1' ? '#F1B300' : colorbotones === '2' ? '#78A036' : colorbotones === '3' ? '#BD5288' : colorbotones === '4' ? '#F6B363' : '#B6D989' }"><i
+              :style="{ backgroundColor: colorbotones === '1' ? '#DEB71C' : colorbotones === '2' ? '#7F6AEC' : colorbotones === '3' ? '#FB4474' : colorbotones === '4' ? '#FC8811' : '#B6D989' }"><i
                 class="fa fa-list-ul"></i>LISTAR BOLETAS</button>
             <button class="btn-acciones" @click="aparecerpersonalizar()"
-              :style="{ backgroundColor: colorbotones === '1' ? '#F1B300' : colorbotones === '2' ? '#78A036' : colorbotones === '3' ? '#BD5288' : colorbotones === '4' ? '#F6B363' : '#B6D989' }"><i
+              :style="{ backgroundColor: colorbotones === '1' ? '#DEB71C' : colorbotones === '2' ? '#7F6AEC' : colorbotones === '3' ? '#FB4474' : colorbotones === '4' ? '#FC8811' : '#B6D989' }"><i
                 class="fa fa-cogs"></i>PERSONALIZAR</button>
 
           </div>
@@ -83,11 +83,11 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               <h3>Boleta {{ numsele }}</h3>
               <div v-if="estado === 0" class="cen">
-                <h6 class="rowc">Estado: Disponible<div class="color" style="background-color: #00075F;"></div>
+                <h6 class="rowc">Estado: Disponible<div class="color" style="background-color: #B6D989;"></div>
                 </h6>
                 <hr v-if="estado === 0">
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"
-                  :style="{ backgroundColor: colorbotones === '1' ? '#F1B300' : colorbotones === '2' ? '#78A036' : colorbotones === '3' ? '#BD5288' : colorbotones === '4' ? '#F6B363' : '#B6D989' }">🤝
+                  :style="{ backgroundColor: colorbotones === '1' ? '#DEB71C' : colorbotones === '2' ? '#7F6AEC' : colorbotones === '3' ? '#FB4474' : colorbotones === '4' ? '#FC8811' : '#B6D989' }">🤝
                   Adquirir Boleta </button>
               </div>
               <div v-if="estado === 1">
@@ -105,21 +105,21 @@
               <div v-if="estado !== 0" class="cen">
                 <hr>
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#participante"
-                  :style="{ backgroundColor: colorbotones === '1' ? '#F1B300' : colorbotones === '2' ? '#78A036' : colorbotones === '3' ? '#BD5288' : colorbotones === '4' ? '#F6B363' : '#B6D989' }">👁‍🗨
+                  :style="{ backgroundColor: colorbotones === '1' ? '#DEB71C' : colorbotones === '2' ? '#7F6AEC' : colorbotones === '3' ? '#FB4474' : colorbotones === '4' ? '#FC8811' : '#B6D989' }">👁‍🗨
                   Ver datos del participante </button>
                 <br v-if="estado !== 3">
                 <button v-if="estado !== 3" type="button" class="btn btn-primary" @click="libb()"
-                  :style="{ backgroundColor: colorbotones === '1' ? '#F1B300' : colorbotones === '2' ? '#78A036' : colorbotones === '3' ? '#BD5288' : colorbotones === '4' ? '#F6B363' : '#B6D989' }">❌
+                  :style="{ backgroundColor: colorbotones === '1' ? '#DEB71C' : colorbotones === '2' ? '#7F6AEC' : colorbotones === '3' ? '#FB4474' : colorbotones === '4' ? '#FC8811' : '#B6D989' }">❌
                   Liberar Boleta
                 </button>
                 <br v-if="estado !== 2 && estado !== 3">
                 <button v-if="estado === 1" type="button" class="btn btn-primary" @click="pagar()"
-                  :style="{ backgroundColor: colorbotones === '1' ? '#F1B300' : colorbotones === '2' ? '#78A036' : colorbotones === '3' ? '#BD5288' : colorbotones === '4' ? '#F6B363' : '#B6D989' }">
+                  :style="{ backgroundColor: colorbotones === '1' ? '#DEB71C' : colorbotones === '2' ? '#7F6AEC' : colorbotones === '3' ? '#FB4474' : colorbotones === '4' ? '#FC8811' : '#B6D989' }">
                   ✔ Pagar Boleta
                 </button>
                 <br v-if="estado === 2">
                 <button v-if="estado === 2" type="button" class="btn btn-primary" @click="ganador()"
-                  :style="{ backgroundColor: colorbotones === '1' ? '#F1B300' : colorbotones === '2' ? '#78A036' : colorbotones === '3' ? '#BD5288' : colorbotones === '4' ? '#F6B363' : '#B6D989' }">👑
+                  :style="{ backgroundColor: colorbotones === '1' ? '#DEB71C' : colorbotones === '2' ? '#7F6AEC' : colorbotones === '3' ? '#FB4474' : colorbotones === '4' ? '#FC8811' : '#B6D989' }">👑
                   Elejir como ganador
                 </button>
               </div>
@@ -147,7 +147,7 @@
                 <option value="2">Pagado</option>
               </select>
               <button class="btn btn-primary botoncito" @click="validarcliente()"
-                :style="{ backgroundColor: colorbotones === '1' ? '#F1B300' : colorbotones === '2' ? '#78A036' : colorbotones === '3' ? '#BD5288' : colorbotones === '4' ? '#F6B363' : '#B6D989' }">Registrar</button>
+                :style="{ backgroundColor: colorbotones === '1' ? '#DEB71C' : colorbotones === '2' ? '#7F6AEC' : colorbotones === '3' ? '#FB4474' : colorbotones === '4' ? '#FC8811' : '#B6D989' }">Registrar</button>
             </div>
           </div>
         </div>
@@ -157,7 +157,7 @@
         <div class="modal-dialog modal-dialog-centered modal-bottom">
           <div class="modal-content">
             <div class="modal-header  encabezado"
-              :style="{ backgroundColor: colorheader === '1' ? '#F1B300' : colorheader === '2' ? '#78A036' : colorheader === '3' ? '#BD5288' : colorheader === '4' ? '#F6B363' : '#B6D989' }">
+              :style="{ backgroundColor: colorheader === '1' ? '#DEB71C' : colorheader === '2' ? '#7F6AEC' : colorheader === '3' ? '#FB4474' : colorheader === '4' ? '#FC8811' : '#B6D989' }">
               <h1 class="modal-title fs-5 titulo-datos-boleta titulo4" id="exampleModalLabel2">Participante</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -201,7 +201,7 @@
                   <span v-if="estado === 2">Pagado</span>
                   <span v-if="estado === 3">Ganador</span>
                 </div>
-                <button data-bs-toggle="modal" data-bs-target="#participanteEdit" class="btn-editar2" :style="{ backgroundColor: colorbotones === '1' ? '#F1B300' : colorbotones === '2' ? '#78A036' : colorbotones === '3' ? '#BD5288' : colorbotones === '4' ? '#F6B363' : '#B6D989' }" >Editar</button>
+                <button data-bs-toggle="modal" data-bs-target="#participanteEdit" class="btn-editar2" :style="{ backgroundColor: colorbotones === '1' ? '#DEB71C' : colorbotones === '2' ? '#7F6AEC' : colorbotones === '3' ? '#FB4474' : colorbotones === '4' ? '#FC8811' : '#B6D989' }" >Editar</button>
               </div>
             </div>
           </div>
@@ -211,7 +211,7 @@
         <div class="cont-listar">
           <div class="cont-conted">
             <div class="cont-listado-titulo"
-              :style="{ backgroundColor: colorheader === '1' ? '#F1B300' : colorheader === '2' ? '#78A036' : colorheader === '3' ? '#BD5288' : colorheader === '4' ? '#F6B363' : '#B6D989' }">
+              :style="{ backgroundColor: colorheader === '1' ? '#DEB71C' : colorheader === '2' ? '#7F6AEC' : colorheader === '3' ? '#FB4474' : colorheader === '4' ? '#FC8811' : '#B6D989' }">
               <span class="closeicon " @click="cerrar2()"><i class="fa fa-times"></i></span>
               <h2>Listado de Boleta</h2>
             </div>
@@ -248,7 +248,7 @@
             </div>
             <div class="contenido2">
               <button class="btn-acciones" @click="download()"
-                :style="{ backgroundColor: colorbotones === '1' ? '#F1B300' : colorbotones === '2' ? '#78A036' : colorbotones === '3' ? '#BD5288' : colorbotones === '4' ? '#F6B363' : '#B6D989' }"><i
+                :style="{ backgroundColor: colorbotones === '1' ? '#DEB71C' : colorbotones === '2' ? '#7F6AEC' : colorbotones === '3' ? '#FB4474' : colorbotones === '4' ? '#FC8811' : '#B6D989' }"><i
                   class="fa fa-download"></i>GENERAR ARCHIVO</button>
             </div>
           </div>
@@ -258,7 +258,7 @@
         <div class="cont-temas">
           <div class="cont-conte2">
             <div class="titulo_temas"
-              :style="{ backgroundColor: colorheader === '1' ? '#F1B300' : colorheader === '2' ? '#78A036' : colorheader === '3' ? '#BD5288' : colorheader === '4' ? '#F6B363' : '#B6D989' }">
+              :style="{ backgroundColor: colorheader === '1' ? '#DEB71C' : colorheader === '2' ? '#7F6AEC' : colorheader === '3' ? '#FB4474' : colorheader === '4' ? '#FC8811' : '#B6D989' }">
               <span class="closeicon " @click="cerrar()"><i class="fa fa-times"></i></span>
               <h2>Temas Para El Talonario</h2>
             </div>
@@ -278,14 +278,14 @@
                   <div class="cont_header_verde bordercito">
                     <input type="radio" name="color" value="2" v-model="colorheader" id="color_verde">
                     <div class="cont-color">
-                      <label for="color_verde">Color Verde</label>
+                      <label for="color_verde">Color Morado</label>
                       <div class="color verde"></div>
                     </div>
                   </div>
                   <div class="cont_header_rosa bordercito">
                     <input type="radio" name="color" value="3" v-model="colorheader" id="color_rojo">
                     <div class="cont-color">
-                      <label for="color_rojo">Color Rosa</label>
+                      <label for="color_rojo">Color Fucsia</label>
                       <div class="color rosa"></div>
                     </div>
                   </div>
@@ -313,14 +313,14 @@
                   <div class="cont_header_verde bordercito">
                     <input type="radio" name="color" value="2" v-model="colorfooter" id="color_verde">
                     <div class="cont-color">
-                      <label for="color_verde">Color Verde</label>
+                      <label for="color_verde">Color Morado</label>
                       <div class="color verde"></div>
                     </div>
                   </div>
                   <div class="cont_header_rosa bordercito">
                     <input type="radio" name="color" value="3" v-model="colorfooter" id="color_rojo">
                     <div class="cont-color">
-                      <label for="color_rojo">Color Rosa</label>
+                      <label for="color_rojo">Color Fucsia</label>
                       <div class="color rosa"></div>
                     </div>
                   </div>
@@ -348,14 +348,14 @@
                   <div class="cont_header_verde bordercito">
                     <input type="radio" name="color" value="2" v-model="colorbotones" id="color_verde">
                     <div class="cont-color">
-                      <label for="color_verde">Color Verde</label>
+                      <label for="color_verde">Color Morado</label>
                       <div class="color verde"></div>
                     </div>
                   </div>
                   <div class="cont_header_rosa bordercito">
                     <input type="radio" name="color" value="3" v-model="colorbotones" id="color_rojo">
                     <div class="cont-color">
-                      <label for="color_rojo">Color Rosa</label>
+                      <label for="color_rojo">Color Fucsia</label>
                       <div class="color rosa"></div>
                     </div>
                   </div>
@@ -391,14 +391,14 @@
               <input type="tel" required pattern="[0-9]+" maxlength="10" placeholder="Ingrese numero telefonico "
                 v-model="telefonoP">
               <button class="btn btn-primary botoncito" @click="editarParticipante()"
-                :style="{ backgroundColor: colorbotones === '1' ? '#F1B300' : colorbotones === '2' ? '#78A036' : colorbotones === '3' ? '#BD5288' : colorbotones === '4' ? '#F6B363' : '#B6D989' }">Editar</button>
+                :style="{ backgroundColor: colorbotones === '1' ? '#DEB71C' : colorbotones === '2' ? '#7F6AEC' : colorbotones === '3' ? '#FB4474' : colorbotones === '4' ? '#FC8811' : '#B6D989' }">Editar</button>
             </div>
           </div>
         </div>
       </div>
     </main>
     <footer class="footer"
-      :style="{ backgroundColor: colorfooter === '1' ? '#F1B300' : colorfooter === '2' ? '#78A036' : colorfooter === '3' ? '#BD5288' : colorfooter === '4' ? '#F6B363' : '#B6D989' }">
+      :style="{ backgroundColor: colorfooter === '1' ? '#DEB71C' : colorfooter === '2' ? '#7F6AEC' : colorfooter === '3' ? '#FB4474' : colorfooter === '4' ? '#FC8811' : '#B6D989' }">
       <div>
         <p>Copyright ©2025 Derechos reservados Nela Durán.</p>
       </div>
@@ -515,7 +515,7 @@ function validarcliente() {
   let texto = /^[A-Za-zÁÉÍÓÚáéíóúñÑüÜ\s]+$/;
 
   if (edit2 ==true) {
-    if (nombreC.value == "") {
+    if (nombreC.value.trim() == "") {
     Swal.fire({
       icon: "error",
       title: "Oops...",
@@ -530,7 +530,7 @@ function validarcliente() {
       text: "El campo de nombre comprador no puede llevar numeros",
       timer: 3500
     });
-  } else if (direccionC.value == "") {
+  } else if (direccionC.value.trim() == "") {
     Swal.fire({
       icon: "error",
       title: "Oops...",
@@ -581,7 +581,7 @@ function validarcliente() {
     bootstrapModal.hide();
   }
   } else {
-    if (nombreC.value == "") {
+    if (nombreC.value.trim() == "") {
     Swal.fire({
       icon: "error",
       title: "Oops...",
@@ -596,7 +596,7 @@ function validarcliente() {
       text: "El campo de nombre comprador no puede llevar numeros",
       timer: 3500
     });
-  } else if (direccionC.value == "") {
+  } else if (direccionC.value.trim() == "") {
     Swal.fire({
       icon: "error",
       title: "Oops...",
